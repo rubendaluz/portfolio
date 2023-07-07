@@ -15,7 +15,6 @@
 
 .landing_page {
   height: 100vh;
-  border-bottom: 1px solid white;
 }
 
 .App_header {
@@ -33,6 +32,7 @@
 .menu li {
   padding: 10px;
   margin: auto 10px;
+  cursor: pointer;
 }
 
 #contact_me_link {
@@ -115,7 +115,6 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 30px;
-  border-bottom: 1px solid white;
 }
 
 .my_face {
@@ -184,7 +183,6 @@ button {
 
 .skills_page {
   height: 100vh;
-  border-bottom: 1px solid white;
 }
 
 /* Ends Skills */
@@ -217,12 +215,13 @@ button {
 /* Begins Portfolio */
 .projects_page {
   height: 100vh;
-  border-bottom: 1px solid white;
 }
 
 .projects_container {
   display: grid;
   height: 90%;
+  max-width: 1000px;
+  margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -232,7 +231,6 @@ button {
   grid-template-rows: 3fr 1fr;
   height: 90%;
   max-width: 350px;
-  margin: auto;
   border: 1px solid #e35e3d;
   border-radius: 10px;
   overflow: hidden;
@@ -257,6 +255,8 @@ button {
   color: #fff;
   text-decoration: none;
   margin: 5px;
+  font-size: 15pt;
+  font-weight: bold;
 }
 /* Ends Portfolio */
 
@@ -268,7 +268,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 1px solid white;
   padding: 30px;
 }
 
@@ -278,4 +277,14 @@ button {
 
 .conteiner > button {
   margin: auto;
+}
+
+footer {
+  background-color: #e35e3d;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
 }

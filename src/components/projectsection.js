@@ -1,17 +1,47 @@
 import React from "react";
 import { ProjectCard } from "./projectcard.js";
-// import html_img from "./img/html.png";
+import screenshot1 from "./img/Screenshot1.png";
+import screenshot2 from "./img/Screenshot2.png";
 
 function ProjectSection() {
   return (
     <div className="projects_container">
       <ProjectCard
+        screenshot={screenshot1}
+        link="https://rubendaluz.github.io/Projeto_WheatherApp/"
+        link_text="www.wheatherapp.com"
+        description="Wheather App"
+      />
+      <ProjectCard
+        screenshot={screenshot2}
+        link="https://github.com/rubendaluz/CV_WebAPP"
+        link_text="Project Repositorie"
+        description="CV app"
+      />
+      <ProjectCard
         screenshot={
-          "https://images.ctfassets.net/lzny33ho1g45/5LqY8rOVmCiN8TrZDScqAB/e932b39ff7ebdeb6c1bf4f35e7eed58e/full-page-screenshots-in-chrome-02-developer-menu-command.png"
+          "https://www.harper-adams.ac.uk/courses/img/responsive/large/Rural-Property-Surveying.jpg"
         }
-        link="www.youtube.com"
-        description="Project1"
-      ></ProjectCard>
+        link="https://github.com/rubendaluz/Programa-Gestao-de-Propriedades"
+        link_text="Project Repositorie"
+        description="Properties Manegement System"
+      />
+      <ProjectCard
+        screenshot={
+          "https://codeprojectz.com/wp-content/uploads/2021/09/Employee-Management-System-In-C-With-Source-Code.png"
+        }
+        link="https://github.com/rubendaluz/Gestor/tree/master/src/main/java"
+        link_text="Project Repositorie"
+        description="IT Company Manegement System"
+      />
+      <ProjectCard
+        screenshot={
+          "https://code-projects.org/wp-content/uploads/2020/01/Capture-2.png"
+        }
+        link="https://github.com/rubendaluz/Zoo-Management-System"
+        link_text="Project Repositorie"
+        description="Zoo Management System"
+      />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { Menu } from "./components/menu.js";
 import { Presentation } from "./components/presentation.js";
 import { SkillSection } from "./components/skillsection.js";
 import { ProjectSection } from "./components/projectsection.js";
+import { Button } from "./components/button.js";
 
 function App() {
   return (
@@ -25,37 +26,26 @@ function App() {
           </div>
 
           <span>
-            Hello! My name is Emily and I am a passionate software developer
+            Hello! My name is Ruben and I am a passionate software developer
             with a love for creating innovative web applications. With a strong
-            background in computer science and several years of experience in
-            front-end and back-end development, I enjoy turning ideas into
-            tangible and user-friendly solutions.
-            <br></br>
-            Throughout my career, I have honed my skills in HTML, CSS, and
-            JavaScript, and have gained expertise in popular frameworks such as
-            React.js and Node.js. I take pride in writing clean, efficient code
-            and implementing best practices to ensure a smooth and responsive
-            user experience.
+            background in computer science, I enjoy turning ideas into tangible
+            and user-friendly solutions.<br></br>
+            <br></br>I have honed skills in HTML, CSS, and JavaScript, and have
+            gained expertise in popular frameworks such as React.js and Node.js.
+            I take pride in writing clean, efficient code and implementing best
+            practices to ensure a smooth and responsive user experience.
             <br></br>
             <br></br>
             Collaboration and problem-solving are two values that I hold dear. I
             thrive in a team environment, where I can work closely with
             designers, product managers, and fellow developers to bring projects
             to life. I believe in the power of communication and actively seek
-            feedback to continuously improve my work.
-            <br></br>
-            <br></br>
-            Besides coding, I am an avid learner and enjoy staying up-to-date
-            with the latest technologies and industry trends. I also have a keen
-            interest in user experience design and strive to create intuitive
-            interfaces that make a positive impact on users.
-            <br></br>
+            feedback to continuously improve my work.<br></br>
             <br></br>
             When I'm not coding, you can find me exploring the great outdoors,
             reading a good book, or trying out new recipes in the kitchen. I
             believe in maintaining a healthy work-life balance to stay motivated
-            and inspired.
-            <br></br>
+            and inspired.<br></br>
             <br></br>I am excited about the opportunity to contribute to
             impactful projects and collaborate with like-minded individuals. If
             you're looking for a dedicated developer who is driven to deliver
@@ -89,10 +79,16 @@ function App() {
             Hi, if you liked what you've seen, and you want to have a
             partnership with me, you can always contact me.
           </span>
-          <button id="contact_me_button">CONTACT ME</button>
+          <Button
+            buttonLink="mailto:rubendaluz684@gmail.com"
+            buttonText="CONTACT ME"
+            buttonId="contact_me_button"
+          />
         </div>
       </div>
-      <footer></footer>
+      <footer>
+        <Menu />
+      </footer>
     </div>
   );
 }

@@ -1,13 +1,33 @@
 import React from "react";
+import { AnchorButton } from "./menubutton.js";
 
 function Menu() {
   return (
     <div className="menu">
       <ul>
-        <li id="about_link">ABOUT</li>
-        <li id="skills_link">SKILLS</li>
-        <li id="portfolio_link">PORTFOLIO</li>
-        <li id="contact_me_link">CONTACT ME</li>
+        <AnchorButton
+          anchorId="about_link"
+          anchorText="ABOUT"
+          targetSection="about_me_page"
+        />
+
+        <AnchorButton
+          anchorId="skills_link"
+          anchorText="SKILLS"
+          targetSection="skills_page"
+        ></AnchorButton>
+
+        <AnchorButton
+          anchorId="portfolio_link"
+          anchorText="PORTFOLIO"
+          targetSection="projects_page"
+        ></AnchorButton>
+
+        <AnchorButton
+          anchorId="contact_me_link"
+          anchorText="CONTACT ME"
+          targetSection="contact_page"
+        ></AnchorButton>
       </ul>
     </div>
   );
