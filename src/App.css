@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -15,39 +16,26 @@
 
 .landing_page {
   height: 100vh;
-}
-
-.App_header {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 10px;
+  grid-template-columns: 1fr 3fr;
 }
 
-.menu ul {
+.left_container , .main_container{
+  background-color: rgb(32, 32, 32);
+  margin: 20px 10px 20px 10px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.presentation{
   display: flex;
-  flex-direction: row;
-  list-style: none;
+  flex-direction: column;
 }
 
-.menu li {
-  padding: 10px;
-  margin: auto 10px;
-  cursor: pointer;
-}
-
-#contact_me_link {
-  padding: 10px;
-  background: #e35e3d;
-  color: black;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.presentation {
-  display: grid;
-  grid-template-columns: 4fr 0.5fr;
-  height: 100%;
-  max-height: 80vh;
+.presentation_top{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .presentation_text {
@@ -90,9 +78,36 @@ button {
   cursor: pointer;
 }
 
+.contact{
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px 5px;
+}
+
+.contact_icon_section{
+  background-color: rgb(45, 44, 44);
+  height: max-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact_info{
+  text-align: left;
+  padding: 10px;
+}
+
+.icon_img{
+  width: 30px;
+}
+
+
 .socials {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -108,33 +123,59 @@ button {
   cursor: pointer;
 }
 
+/* Menu */
+
+.menu{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  /* background-color: #333; */
+  border-radius:10px;
+  overflow: hidden;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.menu li {
+  padding: 10px;
+  margin: 10px 10px;
+  cursor: pointer;
+  background:none
+}
+
+.menu .active{
+  /* border: 2px solid #fff; */
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+#contact_me_link {
+  padding: 10px;
+  background: #e35e3d;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 /* About me page begin */
 
 .about_me_page {
-  height: 100vh;
+  height: fit-content;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-top: 30px;
+  text-align: justify;
 }
 
-.my_face {
-  background-color: #e35e3d;
-  width: 500px;
-  height: 500px;
-  position: relative;
-  margin: auto;
-}
-
-.profile_pic {
-  width: 500px;
-  height: 500px;
-  background-image: url(components/img/profile.jpg);
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  left: 15%;
-  top: 15%;
-  border: 4px solid #e35e3d;
+#profile_pic {
+  width: 100%;
+  padding: 20px;
+  border-radius: 25px;
 }
 
 .aboutme_text {
@@ -142,25 +183,25 @@ button {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+  
+}
+
+/* Content Section */
+
+.content{
+  padding: 0px 20px ;
+  height: fit-content;
 }
 
 .title {
-  position: absolute;
-  background-color: #2d2854;
-  padding: 0 20px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-}
-
-.aboutme_text span {
-  text-align: justify;
-  max-width: 80%;
-  margin: 10px auto;
 }
 
 .title_container {
   height: 40px;
-  margin: 10px;
+  width: fit-content;
+  text-align: left;
   position: relative;
   text-align: center;
   display: flex;
@@ -169,12 +210,11 @@ button {
   align-items: center;
 }
 
-.line {
-  width: 50%;
-  border-radius: 10px;
-  height: 4px;
-  background-color: #e35e3d;
-  z-index: -10;
+/* About me text */
+
+.aboutme_text span {
+  text-align: justify;
+  max-width: 80%;
 }
 
 /* Ends about me */
@@ -182,18 +222,24 @@ button {
 /* Begins Skills */
 
 .skills_page {
+  margin-top: 150px;
   height: 100vh;
 }
 
 /* Ends Skills */
 
 .skills_section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 80vh;
-  max-width: 70vw;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  text-align: justify;
+  padding: 30px;
+}
+
+.Skills_header{
   margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .skill_card {
@@ -213,42 +259,42 @@ button {
 }
 
 /* Begins Portfolio */
-.projects_page {
-  height: 100vh;
-}
 
 .projects_container {
   display: grid;
-  height: 90%;
-  max-width: 1000px;
-  margin: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 100px;
+  cursor: pointer;
 }
 
 .project_card {
-  display: grid;
-  grid-template-rows: 3fr 1fr;
-  height: 90%;
-  max-width: 350px;
-  border: 1px solid #e35e3d;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  max-height: 350px;
+  max-width: 100%;
   border-radius: 10px;
   overflow: hidden;
-  margin: auto 10px;
+  margin: 10px 10px;
 }
+
 .project_screenshot {
   width: 100%;
   height: 100%;
+  max-height: 292px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .project_description_container {
-  background-color: #e35e3d;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: auto 20px;
+  text-align: left;
 }
 
 .project_link {
@@ -257,6 +303,10 @@ button {
   margin: 5px;
   font-size: 15pt;
   font-weight: bold;
+}
+
+.project_description{
+  text-align: center;
 }
 /* Ends Portfolio */
 
@@ -287,4 +337,44 @@ footer {
   align-items: center;
   color: #000;
   font-weight: bold;
+}
+
+h1, h2 {
+  margin: 10px auto;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+p, ul {
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.filter_menu{
+  margin: 10px;
+  text-align: left;
+}
+
+.filter_menu button{
+  background: none;
+  margin: 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* border: 1px solid #333; */
+  width: fit-content;
+}
+
+.filter_menu .active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.filter_menu button:hover {
+  background-color: #333;
 }

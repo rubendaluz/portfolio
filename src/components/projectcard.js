@@ -11,10 +11,12 @@ function ProjectCard(props) {
         <a className="project_link" href={props.link} target="blank">
           {props.link_text}
         </a>
-        <span className="project_description">{props.description}</span>
+        <span className="project_type">{props.description}</span>
       </div>
     </div>
   );
 }
+
+
 
 export { ProjectCard };

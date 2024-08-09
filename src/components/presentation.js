@@ -1,31 +1,51 @@
 import React from "react";
-import { SocialIcon } from "./socialicon.js";
-import github_img from "./img/github.png";
-import linkedin_img from "./img/linkedin.png";
-import { Button } from "./button.js";
+
+import icon_email from "./img/icon_email.png"
+import icon_linkedin from "./img/linkedin.png"
+import icon_github from "./img/github.png"
+import pic from "./img/linkedin_img.jpg"
 
 function Presentation() {
   return (
     <div className="presentation">
-      <div className="presentation_text">
-        <h3>Hi, I'm</h3>
+      <div className="presentation_top">
+        <img id="profile_pic" src={pic} alt=""></img>
         <h1>Rúben da Luz</h1>
-        <span>
-          I am a Junior FullStack Developer, studying Networks and Computer
-          Systems Engeneering. I have build user friendly and robust projects.
-        </span>
-        <Button
-          buttonLink="mailto:rubendaluz684@gmail.com"
-          buttonText="HIRE ME"
-          buttonId="hire_me_button"
-        />
+        <p>Networks & Computer Systems Engineer</p>
+        <br></br>
+        <hr></hr>
       </div>
-      <div className="socials">
-        <SocialIcon image={github_img} link="https://github.com/rubendaluz" />
-        <SocialIcon
-          image={linkedin_img}
-          link="https://www.linkedin.com/in/rubendaluz/"
-        />
+      <div className="contacts">
+        <div className="contact">
+          <div className="contact_icon_section">
+            <img className="icon_img" src={icon_email} alt=""></img>
+          </div>
+          <div className="contact_info">
+          <p>Email</p>
+          <p>rubendaluz684@gmail.com</p>
+          </div>
+        </div>
+
+        <div className="contact">
+          <div className="contact_icon_section">
+            <img className="icon_img" src={icon_linkedin} alt=""></img>
+          </div>
+          <div className="contact_info">
+          <p>Linkedin</p>
+          <p>rubendaluz684@gmail.com</p>
+          </div>
+        </div>
+
+        <div className="contact">
+          <div className="contact_icon_section">
+            <img className="icon_img" src={icon_github} alt=""></img>
+          </div>
+          <div className="contact_info">
+          <p>Github</p>
+          <p>rubendaluz684@gmail.com</p>
+          </div>
+        </div>
+        
       </div>
     </div>
   );

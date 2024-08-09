@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AnchorButton = (props) => {
+const AnchorButton = ({ anchorId, anchorText, targetSection, onClick, isActive }) => {
   const [border, setBorder] = useState("none");
 
   const mouseHover = () => {
@@ -11,22 +11,19 @@ const AnchorButton = (props) => {
     setBorder("none");
   };
 
-  const scrollToSection = () => {
-    const section = document.querySelector("." + props.targetSection);
-    section.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <li
       style={{ borderBottom: border }}
-      onClick={scrollToSection}
+      onClick={() => onClick(targetSection)}
       onMouseEnter={mouseHover}
       onMouseLeave={mouseNotHover}
-      id={props.anchorId}
+      id={anchorId}
+      className={isActive ? 'active' : ''}
     >
-      {props.anchorText}
+      {anchorText}
     </li>
   );
 };
 
 export { AnchorButton };
+
