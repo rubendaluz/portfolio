@@ -8,11 +8,11 @@ function ProjectCard(props) {
         style={{ backgroundImage: `url(${props.screenshot})` }}
       ></div>
       <div className="project_description_container">
-        <a className="project_link" href={props.link} target="blank">
-          {props.link_text}
-        </a>
-        <span className="project_type">{props.description}</span>
+        {/* <span className="project_type">{props.description}</span> */}
       </div>
+      <a className="project_link" href={props.link} target="blank">
+          {props.link_text}
+      </a>
     </div>
   );
 }

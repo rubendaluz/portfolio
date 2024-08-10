@@ -260,6 +260,7 @@ button {
 
 /* Begins Portfolio */
 
+
 .projects_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -275,7 +276,7 @@ button {
   height: 350px;
   max-height: 350px;
   max-width: 100%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
   margin: 10px 10px;
 }
@@ -287,6 +288,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
 }
 
 .project_description_container {

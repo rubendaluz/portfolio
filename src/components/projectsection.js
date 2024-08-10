@@ -7,6 +7,8 @@ import iot from "./img/iot.png";
 import wazuh from "./img/wazuh.png";
 import multiaccess from "./img/multiaccess.png";
 import smartlib from "./img/smartlib.png";
+import proxmox from "./img/proxmox.png";
+import secure from "./img/secure.png";
 
 
 function ProjectSection() {
@@ -77,13 +79,6 @@ const projects = [
     description: '',
   },
   {
-    type: '',
-    screenshot: '',
-    link: 'https://github.com/rubendaluz/Windows-Quick-Security-Analyser',
-    link_text: 'Windows Security Analyser',
-    description: '',
-  },
-  {
     type: 'Web Development',
     screenshot: screenshot_wapp,
     link: 'https://rubendaluz.github.io/Projeto_WheatherApp/',
@@ -120,7 +115,7 @@ const projects = [
   },
   {
     type: 'Networking',
-    screenshot: '',
+    screenshot: proxmox,
     link: 'https://github.com/rubendaluz/VMware-and-Storage-Optimization-Project',
     link_text: 'HA cluster with Proxmox',
     description: '',
@@ -132,6 +127,13 @@ const projects = [
     link_text: 'IoT Security System',
     description: '',
   },
+  {
+    type: 'Web Development',
+    screenshot: secure,
+    link: 'https://github.com/rubendaluz/Windows-Quick-Security-Analyser',
+    link_text: 'Windows Security Analyser',
+    description: '',
+  }
 ];
 
 export { ProjectSection };
